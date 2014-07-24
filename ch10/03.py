@@ -17,6 +17,7 @@ wikipedia.org/wiki/Letter_frequencies.
 
 
 file_name = raw_input("Which book? ")
+# file_name = 'huck.txt'
 book = open(file_name, 'r')
 
 
