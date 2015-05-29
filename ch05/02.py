@@ -11,26 +11,19 @@ end prints out both the maximum and minimum of the numbers instead of the
 average.
 '''
 
-MAX = 0
-MIN = 0
-
-
-def calculator():
-    global MAX
-    global MIN
+def calc():
+    numbers = []
+    count = 0
     while True:
-        number = raw_input("Enter a number: ")
-        if number == "done":
-            print MAX, MIN
+        get_num = raw_input("Enter a number: ")
+        if get_num == 'done':
+            print min(numbers), max(numbers)
             break
-        try:
-            number = float(number)
-        except:
-            print "Invalid input"
-            continue
-        if number > MAX:
-            MAX = number
-        if number < MIN:
-            MIN = number
-
-calculator()
+        else:
+            try:
+                numbers.append(float(get_num))
+            except:
+                print "Invalid input"
+                continue
+        
+calc()

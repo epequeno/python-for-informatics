@@ -21,27 +21,20 @@ Enter a number: done
 16 3 5.33333333333
 '''
 
-TOTAL = 0
-COUNT = 0
-
-
 def calculator():
-    global TOTAL
-    global COUNT
+    total = 0
+    count = 0
     while True:
-        number = raw_input("Enter a number: ")
-        if number == "done" and TOTAL > 0 and COUNT > 0:
-            print TOTAL, COUNT, (TOTAL / COUNT)
+        num = raw_input("Enter a number: ")
+        if num == 'done':
+            print total, count, (total / count)
             break
-        elif number == "done":
-            print "done with invalid input (div by 0?)"
-            break
-        try:
-            number = float(number)
-        except:
-            print "Invalid input"
-            continue
-        TOTAL += number
-        COUNT += 1
-
+        else:
+            try:
+                total += float(num)
+            except:
+                print "Invalid input"
+                continue
+        count += 1
+        
 calculator()
