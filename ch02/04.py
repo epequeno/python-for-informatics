@@ -21,7 +21,7 @@ the type (of the value of the expression).
 
 3. height/3
 
-4. 1 + 2 * 5
+4. 1 + 2 * 5 #Does the text of the PDF have a typo?  Reads 1 + 2 \* 5.  Severance, Charles. Python for Everybody: Exploring Data in Python 3 (Kindle Location 574). Kindle Edition. 
 
 Use the Python interpreter to check your answers. 
 '''
